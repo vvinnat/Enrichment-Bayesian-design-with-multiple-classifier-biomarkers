@@ -1229,7 +1229,7 @@ simulate_binary_bayesian_trial_3_subsets <-
         n.iter = 30000,
         n.burnin = 20000,
         n.thin = 5,
-        n.chains = 1,
+        n.chains = 3,
         parameters.to.save = c(
           "p1.estim",
           "p0.estim",
@@ -1313,7 +1313,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -1387,7 +1387,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -1461,7 +1461,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -1535,7 +1535,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -1609,7 +1609,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -1682,7 +1682,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -1754,7 +1754,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -1840,7 +1840,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -1913,7 +1913,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -1986,7 +1986,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2059,7 +2059,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2133,7 +2133,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2205,7 +2205,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2277,7 +2277,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2364,7 +2364,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2437,7 +2437,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2511,7 +2511,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2585,7 +2585,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2659,7 +2659,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2731,7 +2731,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2803,7 +2803,7 @@ simulate_binary_bayesian_trial_3_subsets <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -3453,7 +3453,7 @@ simulate_binary_bayesian_trial_2_subset_GS <-
         n.iter = 30000,
         n.burnin = 20000,
         n.thin = 5,
-        n.chains = 1,
+        n.chains = 3,
         parameters.to.save = c(
           "p1.estim",
           "p0.estim",
@@ -3509,7 +3509,7 @@ simulate_binary_bayesian_trial_2_subset_GS <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -3557,7 +3557,7 @@ simulate_binary_bayesian_trial_2_subset_GS <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -3604,7 +3604,7 @@ simulate_binary_bayesian_trial_2_subset_GS <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -3664,7 +3664,7 @@ simulate_binary_bayesian_trial_2_subset_GS <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -3712,7 +3712,7 @@ simulate_binary_bayesian_trial_2_subset_GS <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -3759,7 +3759,7 @@ simulate_binary_bayesian_trial_2_subset_GS <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -3819,7 +3819,7 @@ simulate_binary_bayesian_trial_2_subset_GS <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -3866,7 +3866,7 @@ simulate_binary_bayesian_trial_2_subset_GS <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -3913,7 +3913,7 @@ simulate_binary_bayesian_trial_2_subset_GS <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",

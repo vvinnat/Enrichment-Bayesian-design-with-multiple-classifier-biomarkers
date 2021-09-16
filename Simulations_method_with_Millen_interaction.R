@@ -322,7 +322,7 @@ create_list_for_inits_values <-
   }
 
 # function for JAGS results
-results_bayesian_model_2_subset_millen <-
+results_bayesian_model_2_subset_Millen <-
   function(bayesian_jags_fonction_IA1, Data) {
     p11 <- bayesian_jags_fonction_IA1$BUGSoutput$mean$p11
     p10 <- bayesian_jags_fonction_IA1$BUGSoutput$mean$p10
@@ -399,7 +399,7 @@ results_bayesian_model_2_subset_millen <-
 
 # Simulation
 #Simuation with 2 subsets and Millen method
-simulate_binary_bayesian_trial_2_subset_millen <-
+simulate_binary_bayesian_trial_2_subset_Millen <-
   function(q1=0.5,
            N_1=200,
            N_2=200,
@@ -410,9 +410,9 @@ simulate_binary_bayesian_trial_2_subset_millen <-
            pi0A=0.3,
            pi0B=0.4,
            pa=0.5,
-           bayesian.model=binary_bayesian_model_2_subset_millen,
-           stopping_rules.IA=stopping_rules_first_analyse_variation_2.0,
-           stopping_rules.TA=stopping_rules_other_analyse_variation_2.0,lambda_1=0.9,eta_1=1.25,gamma_1=0.9,epsilon_1=0.90) {
+           bayesian.model=binary_bayesian_model_2_subset_Millen,
+           stopping_rules.IA=stopping_rules_first_analyse_variation_2_subset_Millen,
+           stopping_rules.TA=stopping_rules_other_analyse_variation_2_subset_Millen,lambda_1=0.9,eta_1=1.25,gamma_1=0.9,epsilon_1=0.90) {
     mat.sub1 <- create_matrix_2.0(Nsimu)
     #for (i in 1:Nsimu) {
       First_result <- NULL
@@ -438,7 +438,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
           n.iter = 30000,
           n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim","p0.estim",
             "p11",
@@ -463,7 +463,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
         )
       
       results_IA1 <-
-        results_bayesian_model_2_subset_millen(bayesian_jags_fonction_IA1, Data_IA1)
+        results_bayesian_model_2_subset_Millen(bayesian_jags_fonction_IA1, Data_IA1)
       
       First_result <- list(Data_IA1, results_IA1)
       
@@ -496,7 +496,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
             n.iter = 30000,
             n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim","p0.estim",
               "p11",
@@ -521,7 +521,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
           )
         
         results_IA2 <-
-          results_bayesian_model_2_subset_millen(bayesian_jags_fonction_IA2, Data_IA2)
+          results_bayesian_model_2_subset_Millen(bayesian_jags_fonction_IA2, Data_IA2)
         
         Second_result <- list(Data_IA2, results_IA2)
         
@@ -546,7 +546,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
             n.iter = 30000,
             n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim","p0.estim",
               "p11",
@@ -571,7 +571,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
           )
         
         results_IA2 <-
-          results_bayesian_model_2_subset_millen(bayesian_jags_fonction_IA2, Data_IA2)
+          results_bayesian_model_2_subset_Millen(bayesian_jags_fonction_IA2, Data_IA2)
         
         Second_result <- list(Data_IA2, results_IA2)
         
@@ -595,7 +595,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
             n.iter = 30000,
             n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim","p0.estim",
               "p11",
@@ -620,7 +620,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
           )
         
         results_IA2 <-
-          results_bayesian_model_2_subset_millen(bayesian_jags_fonction_IA2, Data_IA2)
+          results_bayesian_model_2_subset_Millen(bayesian_jags_fonction_IA2, Data_IA2)
         
         Second_result <- list(Data_IA2, results_IA2)
       }
@@ -655,7 +655,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
             n.iter = 30000,
             n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim","p0.estim",
               "p11",
@@ -680,7 +680,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
           )
         
         results_IA3 <-
-          results_bayesian_model_2_subset_millen(bayesian_jags_fonction_IA3, Data_IA3)
+          results_bayesian_model_2_subset_Millen(bayesian_jags_fonction_IA3, Data_IA3)
         
         Third_result <- list(Data_IA3, results_IA3)
         
@@ -707,7 +707,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
             n.iter = 30000,
             n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim","p0.estim",
               "p11",
@@ -732,7 +732,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
           )
         
         results_IA3 <-
-          results_bayesian_model_2_subset_millen(bayesian_jags_fonction_IA3, Data_IA3)
+          results_bayesian_model_2_subset_Millen(bayesian_jags_fonction_IA3, Data_IA3)
         
         Third_result <- list(Data_IA3, results_IA3)
         
@@ -758,7 +758,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
             n.iter = 30000,
             n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim","p0.estim",
               "p11",
@@ -783,7 +783,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
           )
         
         results_IA3 <-
-          results_bayesian_model_2_subset_millen(bayesian_jags_fonction_IA3, Data_IA3)
+          results_bayesian_model_2_subset_Millen(bayesian_jags_fonction_IA3, Data_IA3)
         
         Third_result <- list(Data_IA3, results_IA3)
       }
@@ -818,7 +818,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
             n.iter = 30000,
             n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim","p0.estim",
               "p11",
@@ -843,7 +843,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
           )
         
         results_IA4 <-
-          results_bayesian_model_2_subset_millen(bayesian_jags_fonction_IA4, Data_IA4)
+          results_bayesian_model_2_subset_Millen(bayesian_jags_fonction_IA4, Data_IA4)
         
         Final_result <- list(Data_IA4, results_IA4)
         
@@ -869,7 +869,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
             n.iter = 30000,
             n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim","p0.estim",
               "p11",
@@ -894,7 +894,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
           )
         
         results_IA4 <-
-          results_bayesian_model_2_subset_millen(bayesian_jags_fonction_IA4, Data_IA4)
+          results_bayesian_model_2_subset_Millen(bayesian_jags_fonction_IA4, Data_IA4)
         
         Final_result <- list(Data_IA4, results_IA4)
         
@@ -920,7 +920,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
             n.iter = 30000,
             n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim","p0.estim",
               "p11",
@@ -945,7 +945,7 @@ simulate_binary_bayesian_trial_2_subset_millen <-
           )
         
         results_IA4 <-
-          results_bayesian_model_2_subset_millen(bayesian_jags_fonction_IA4, Data_IA4)
+          results_bayesian_model_2_subset_Millen(bayesian_jags_fonction_IA4, Data_IA4)
         
         Final_result <- list(Data_IA4, results_IA4)
         
@@ -1039,7 +1039,7 @@ registerDoSNOW(cl)
 
 
 ### scenarios with pa( prevalence subset) simulation####
-sc1_2subset_variation_pa_millen <- list()
+sc1_2subset_variation_pa_Millen <- list()
 for (m in seq_along(pa_choice)) {
   pa_choices <- pa_choice[m]
   
@@ -1061,9 +1061,9 @@ for (m in seq_along(pa_choice)) {
       0.4,
       0.4,
       pa_choices,
-      binary_bayesian_model_2_subset_millen,
-      stopping_rules_first_analyse_variation_2_subset_millen,
-      stopping_rules_other_analyse_variation_2_subset_millen,
+      binary_bayesian_model_2_subset_Millen,
+      stopping_rules_first_analyse_variation_2_subset_Millen,
+      stopping_rules_other_analyse_variation_2_subset_Millen,
       0.9,
       1.25,
       0.90,
@@ -1072,14 +1072,14 @@ for (m in seq_along(pa_choice)) {
       
     )
   }
-  sc1_2subset_variation_pa_millen[[m]] <- data.frame(res)
+  sc1_2subset_variation_pa_Millen[[m]] <- data.frame(res)
 }
-saveRDS(sc1_2subset_variation_pa_millen, file = "sc1_2subset_variation_estimate_pa_millen.rds")
-sc1_2subset_variation_pa_millen <- bind_rows(sc1_2subset_variation_pa_millen)
+saveRDS(sc1_2subset_variation_pa_Millen, file = "sc1_2subset_variation_estimate_pa_Millen.rds")
+sc1_2subset_variation_pa_Millen <- bind_rows(sc1_2subset_variation_pa_Millen)
 
-sc1_2subset_variation_pa_millen <-
-  sc1_2subset_variation_pa_millen %>% group_by(pa) %>% summarise_all(mean)
-colnames(sc1_2subset_variation_pa_millen) <- c(
+sc1_2subset_variation_pa_Millen <-
+  sc1_2subset_variation_pa_Millen %>% group_by(pa) %>% summarise_all(mean)
+colnames(sc1_2subset_variation_pa_Millen) <- c(
   "pa",
   "q1",
   "RR.global",
@@ -1137,7 +1137,7 @@ colnames(sc1_2subset_variation_pa_millen) <- c(
   "biais_int_1_sd"
 )
 
-sc2_2subset_variation_pa_millen <- list()
+sc2_2subset_variation_pa_Millen <- list()
 for (m in seq_along(pa_choice)) {
   pa_choices <- pa_choice[m]
   
@@ -1159,9 +1159,9 @@ for (m in seq_along(pa_choice)) {
       0.4,
       0.4,
       pa_choices,
-      binary_bayesian_model_2_subset_millen,
-      stopping_rules_first_analyse_variation_2_subset_millen,
-      stopping_rules_other_analyse_variation_2_subset_millen,
+      binary_bayesian_model_2_subset_Millen,
+      stopping_rules_first_analyse_variation_2_subset_Millen,
+      stopping_rules_other_analyse_variation_2_subset_Millen,
       0.9,
       1.25,
       0.90,
@@ -1170,14 +1170,14 @@ for (m in seq_along(pa_choice)) {
       
     )
   }
-  sc2_2subset_variation_pa_millen[[m]] <- data.frame(res)
+  sc2_2subset_variation_pa_Millen[[m]] <- data.frame(res)
 }
-saveRDS(sc2_2subset_variation_pa_millen, file = "sc2_2subset_variation_estimate_pa_millen.rds")
-sc2_2subset_variation_pa_millen <- bind_rows(sc2_2subset_variation_pa_millen)
+saveRDS(sc2_2subset_variation_pa_Millen, file = "sc2_2subset_variation_estimate_pa_Millen.rds")
+sc2_2subset_variation_pa_Millen <- bind_rows(sc2_2subset_variation_pa_Millen)
 
-sc2_2subset_variation_pa_millen <-
-  sc2_2subset_variation_pa_millen %>% group_by(pa) %>% summarise_all(mean)
-colnames(sc2_2subset_variation_pa_millen) <- c(
+sc2_2subset_variation_pa_Millen <-
+  sc2_2subset_variation_pa_Millen %>% group_by(pa) %>% summarise_all(mean)
+colnames(sc2_2subset_variation_pa_Millen) <- c(
   "pa",
   "q1",
   "RR.global",
@@ -1235,7 +1235,7 @@ colnames(sc2_2subset_variation_pa_millen) <- c(
   "biais_int_1_sd"
 )
 
-sc3_2subset_variation_pa_millen <- list()
+sc3_2subset_variation_pa_Millen <- list()
 for (m in seq_along(pa_choice)) {
   pa_choices <- pa_choice[m]
   
@@ -1257,9 +1257,9 @@ for (m in seq_along(pa_choice)) {
       0.37,
       0.4,
       pa_choices,
-      binary_bayesian_model_2_subset_millen,
-      stopping_rules_first_analyse_variation_2_subset_millen,
-      stopping_rules_other_analyse_variation_2_subset_millen,
+      binary_bayesian_model_2_subset_Millen,
+      stopping_rules_first_analyse_variation_2_subset_Millen,
+      stopping_rules_other_analyse_variation_2_subset_Millen,
       0.9,
       1.25,
       0.90,
@@ -1268,14 +1268,14 @@ for (m in seq_along(pa_choice)) {
       
     )
   }
-  sc3_2subset_variation_pa_millen[[m]] <- data.frame(res)
+  sc3_2subset_variation_pa_Millen[[m]] <- data.frame(res)
 }
-saveRDS(sc3_2subset_variation_pa_millen, file = "sc3_2subset_variation_estimate_pa_millen.rds")
-sc3_2subset_variation_pa_millen <- bind_rows(sc3_2subset_variation_pa_millen)
+saveRDS(sc3_2subset_variation_pa_Millen, file = "sc3_2subset_variation_estimate_pa_Millen.rds")
+sc3_2subset_variation_pa_Millen <- bind_rows(sc3_2subset_variation_pa_Millen)
 
-sc3_2subset_variation_pa_millen <-
-  sc3_2subset_variation_pa_millen %>% group_by(pa) %>% summarise_all(mean)
-colnames(sc3_2subset_variation_pa_millen) <- c(
+sc3_2subset_variation_pa_Millen <-
+  sc3_2subset_variation_pa_Millen %>% group_by(pa) %>% summarise_all(mean)
+colnames(sc3_2subset_variation_pa_Millen) <- c(
   "pa",
   "q1",
   "RR.global",
@@ -1332,7 +1332,7 @@ colnames(sc3_2subset_variation_pa_millen) <- c(
   "biais_int_1",
   "biais_int_1_sd"
 )
-sc4_2subset_variation_pa_millen <- list()
+sc4_2subset_variation_pa_Millen <- list()
 for (m in seq_along(pa_choice)) {
   pa_choices <- pa_choice[m]
   
@@ -1354,9 +1354,9 @@ for (m in seq_along(pa_choice)) {
       0.5,
       0.4,
       pa_choices,
-      binary_bayesian_model_2_subset_millen,
-      stopping_rules_first_analyse_variation_2_subset_millen,
-      stopping_rules_other_analyse_variation_2_subset_millen,
+      binary_bayesian_model_2_subset_Millen,
+      stopping_rules_first_analyse_variation_2_subset_Millen,
+      stopping_rules_other_analyse_variation_2_subset_Millen,
       0.9,
       1.25,
       0.90,
@@ -1365,14 +1365,14 @@ for (m in seq_along(pa_choice)) {
       
     )
   }
-  sc4_2subset_variation_pa_millen[[m]] <- data.frame(res)
+  sc4_2subset_variation_pa_Millen[[m]] <- data.frame(res)
 }
-saveRDS(sc4_2subset_variation_pa_millen, file = "sc4_2subset_variation_estimate_pa_millen.rds")
-sc4_2subset_variation_pa_millen <- bind_rows(sc4_2subset_variation_pa_millen)
+saveRDS(sc4_2subset_variation_pa_Millen, file = "sc4_2subset_variation_estimate_pa_Millen.rds")
+sc4_2subset_variation_pa_Millen <- bind_rows(sc4_2subset_variation_pa_Millen)
 
-sc4_2subset_variation_pa_millen <-
-  sc4_2subset_variation_pa_millen %>% group_by(pa) %>% summarise_all(mean)
-colnames(sc4_2subset_variation_pa_millen) <- c(
+sc4_2subset_variation_pa_Millen <-
+  sc4_2subset_variation_pa_Millen %>% group_by(pa) %>% summarise_all(mean)
+colnames(sc4_2subset_variation_pa_Millen) <- c(
   "pa",
   "q1",
   "RR.global",
@@ -1431,7 +1431,7 @@ colnames(sc4_2subset_variation_pa_millen) <- c(
 )
 
 #### scenarios with Q1 ( balance of randomization ) simulation ####
-sc1_2subset_variation_q1_millen <- list()
+sc1_2subset_variation_q1_Millen <- list()
 for (m in seq_along(q1_choice)) {
   q1_choices <- q1_choice[m]
   
@@ -1453,9 +1453,9 @@ for (m in seq_along(q1_choice)) {
       0.4,
       0.4,
       0.5,
-      binary_bayesian_model_2_subset_millen,
-      stopping_rules_first_analyse_variation_2_subset_millen,
-      stopping_rules_other_analyse_variation_2_subset_millen,
+      binary_bayesian_model_2_subset_Millen,
+      stopping_rules_first_analyse_variation_2_subset_Millen,
+      stopping_rules_other_analyse_variation_2_subset_Millen,
       0.9,
       1.25,
       0.90,
@@ -1464,14 +1464,14 @@ for (m in seq_along(q1_choice)) {
       
     )
   }
-  sc1_2subset_variation_q1_millen[[m]] <- data.frame(res)
+  sc1_2subset_variation_q1_Millen[[m]] <- data.frame(res)
 }
-saveRDS(sc1_2subset_variation_q1_millen, file = "sc1_2subset_variation_estimate_q1_millen.rds")
-sc1_2subset_variation_q1_millen <- bind_rows(sc1_2subset_variation_q1_millen)
+saveRDS(sc1_2subset_variation_q1_Millen, file = "sc1_2subset_variation_estimate_q1_Millen.rds")
+sc1_2subset_variation_q1_Millen <- bind_rows(sc1_2subset_variation_q1_Millen)
 
-sc1_2subset_variation_q1_millen <-
-  sc1_2subset_variation_q1_millen %>% group_by(q1) %>% summarise_all(mean)
-colnames(sc1_2subset_variation_q1_millen) <- c(
+sc1_2subset_variation_q1_Millen <-
+  sc1_2subset_variation_q1_Millen %>% group_by(q1) %>% summarise_all(mean)
+colnames(sc1_2subset_variation_q1_Millen) <- c(
   "q1",
   "pa",
   "RR.global",
@@ -1529,7 +1529,7 @@ colnames(sc1_2subset_variation_q1_millen) <- c(
   "biais_int_1_sd"
 )
 
-sc2_2subset_variation_q1_millen <- list()
+sc2_2subset_variation_q1_Millen <- list()
 for (m in seq_along(q1_choice)) {
   q1_choices <- q1_choice[m]
   
@@ -1551,9 +1551,9 @@ for (m in seq_along(q1_choice)) {
       0.4,
       0.4,
       0.5,
-      binary_bayesian_model_2_subset_millen,
-      stopping_rules_first_analyse_variation_2_subset_millen,
-      stopping_rules_other_analyse_variation_2_subset_millen,
+      binary_bayesian_model_2_subset_Millen,
+      stopping_rules_first_analyse_variation_2_subset_Millen,
+      stopping_rules_other_analyse_variation_2_subset_Millen,
       0.9,
       1.25,
       0.90,
@@ -1562,14 +1562,14 @@ for (m in seq_along(q1_choice)) {
       
     )
   }
-  sc2_2subset_variation_q1_millen[[m]] <- data.frame(res)
+  sc2_2subset_variation_q1_Millen[[m]] <- data.frame(res)
 }
-saveRDS(sc2_2subset_variation_q1_millen, file = "sc2_2subset_variation_estimate_q1_millen.rds")
-sc2_2subset_variation_q1_millen <- bind_rows(sc2_2subset_variation_q1_millen)
+saveRDS(sc2_2subset_variation_q1_Millen, file = "sc2_2subset_variation_estimate_q1_Millen.rds")
+sc2_2subset_variation_q1_Millen <- bind_rows(sc2_2subset_variation_q1_Millen)
 
-sc2_2subset_variation_q1_millen <-
-  sc2_2subset_variation_q1_millen %>% group_by(q1) %>% summarise_all(mean)
-colnames(sc2_2subset_variation_q1_millen) <- c(
+sc2_2subset_variation_q1_Millen <-
+  sc2_2subset_variation_q1_Millen %>% group_by(q1) %>% summarise_all(mean)
+colnames(sc2_2subset_variation_q1_Millen) <- c(
   "q1",
   "pa",
   "RR.global",
@@ -1627,7 +1627,7 @@ colnames(sc2_2subset_variation_q1_millen) <- c(
   "biais_int_1_sd"
 )
 
-sc3_2subset_variation_q1_millen <- list()
+sc3_2subset_variation_q1_Millen <- list()
 for (m in seq_along(q1_choice)) {
   q1_choices <- q1_choice[m]
   
@@ -1649,9 +1649,9 @@ for (m in seq_along(q1_choice)) {
       0.37,
       0.4,
       0.5,
-      binary_bayesian_model_2_subset_millen,
-      stopping_rules_first_analyse_variation_2_subset_millen,
-      stopping_rules_other_analyse_variation_2_subset_millen,
+      binary_bayesian_model_2_subset_Millen,
+      stopping_rules_first_analyse_variation_2_subset_Millen,
+      stopping_rules_other_analyse_variation_2_subset_Millen,
       0.9,
       1.25,
       0.90,
@@ -1660,14 +1660,14 @@ for (m in seq_along(q1_choice)) {
       
     )
   }
-  sc3_2subset_variation_q1_millen[[m]] <- data.frame(res)
+  sc3_2subset_variation_q1_Millen[[m]] <- data.frame(res)
 }
-saveRDS(sc3_2subset_variation_q1_millen, file = "sc3_2subset_variation_estimate_q1_millen.rds")
-sc3_2subset_variation_q1_millen <- bind_rows(sc3_2subset_variation_q1_millen)
+saveRDS(sc3_2subset_variation_q1_Millen, file = "sc3_2subset_variation_estimate_q1_Millen.rds")
+sc3_2subset_variation_q1_Millen <- bind_rows(sc3_2subset_variation_q1_Millen)
 
-sc3_2subset_variation_q1_millen <-
-  sc3_2subset_variation_q1_millen %>% group_by(q1) %>% summarise_all(mean)
-colnames(sc3_2subset_variation_q1_millen) <- c(
+sc3_2subset_variation_q1_Millen <-
+  sc3_2subset_variation_q1_Millen %>% group_by(q1) %>% summarise_all(mean)
+colnames(sc3_2subset_variation_q1_Millen) <- c(
   "q1",
   "pa",
   "RR.global",
@@ -1725,7 +1725,7 @@ colnames(sc3_2subset_variation_q1_millen) <- c(
   "biais_int_1_sd"
 )
 
-sc4_2subset_variation_q1_millen <- list()
+sc4_2subset_variation_q1_Millen <- list()
 for (m in seq_along(q1_choice)) {
   q1_choices <- q1_choice[m]
   
@@ -1747,9 +1747,9 @@ for (m in seq_along(q1_choice)) {
       0.5,
       0.4,
       0.5,
-      binary_bayesian_model_2_subset_millen,
-      stopping_rules_first_analyse_variation_2_subset_millen,
-      stopping_rules_other_analyse_variation_2_subset_millen,
+      binary_bayesian_model_2_subset_Millen,
+      stopping_rules_first_analyse_variation_2_subset_Millen,
+      stopping_rules_other_analyse_variation_2_subset_Millen,
       0.9,
       1.25,
       0.90,
@@ -1758,14 +1758,14 @@ for (m in seq_along(q1_choice)) {
       
     )
   }
-  sc4_2subset_variation_q1_millen[[m]] <- data.frame(res)
+  sc4_2subset_variation_q1_Millen[[m]] <- data.frame(res)
 }
-saveRDS(sc4_2subset_variation_q1_millen, file = "sc4_2subset_variation_estimate_q1_millen.rds")
-sc4_2subset_variation_q1_millen <- bind_rows(sc4_2subset_variation_q1_millen)
+saveRDS(sc4_2subset_variation_q1_Millen, file = "sc4_2subset_variation_estimate_q1_Millen.rds")
+sc4_2subset_variation_q1_Millen <- bind_rows(sc4_2subset_variation_q1_Millen)
 
-sc4_2subset_variation_q1_millen <-
-  sc4_2subset_variation_q1_millen %>% group_by(q1) %>% summarise_all(mean)
-colnames(sc4_2subset_variation_q1_millen) <- c(
+sc4_2subset_variation_q1_Millen <-
+  sc4_2subset_variation_q1_Millen %>% group_by(q1) %>% summarise_all(mean)
+colnames(sc4_2subset_variation_q1_Millen) <- c(
   "q1",
   "pa",
   "RR.global",
@@ -1825,13 +1825,13 @@ colnames(sc4_2subset_variation_q1_millen) <- c(
 
 
 #save all scenarios for create graphics and tables
-saveRDS(sc1_2subset_variation_pa_millen, file = "sc1_2subset_variation_pa_millen.rds")
-saveRDS(sc2_2subset_variation_pa_millen, file = "sc2_2subset_variation_pa_millen.rds")
-saveRDS(sc3_2subset_variation_pa_millen, file = "sc3_2subset_variation_pa_millen.rds")
-saveRDS(sc4_2subset_variation_pa_millen, file = "sc4_2subset_variation_pa_millen.rds")
+saveRDS(sc1_2subset_variation_pa_Millen, file = "sc1_2subset_variation_pa_Millen.rds")
+saveRDS(sc2_2subset_variation_pa_Millen, file = "sc2_2subset_variation_pa_Millen.rds")
+saveRDS(sc3_2subset_variation_pa_Millen, file = "sc3_2subset_variation_pa_Millen.rds")
+saveRDS(sc4_2subset_variation_pa_Millen, file = "sc4_2subset_variation_pa_Millen.rds")
 
-saveRDS(sc1_2subset_variation_q1_millen, file = "sc1_2subset_variation_q1_millen.rds")
-saveRDS(sc2_2subset_variation_q1_millen, file = "sc2_2subset_variation_q1_millen.rds")
-saveRDS(sc3_2subset_variation_q1_millen, file = "sc3_2subset_variation_q1_millen.rds")
-saveRDS(sc4_2subset_variation_q1_millen, file = "sc4_2subset_variation_q1_millen.rds")
+saveRDS(sc1_2subset_variation_q1_Millen, file = "sc1_2subset_variation_q1_Millen.rds")
+saveRDS(sc2_2subset_variation_q1_Millen, file = "sc2_2subset_variation_q1_Millen.rds")
+saveRDS(sc3_2subset_variation_q1_Millen, file = "sc3_2subset_variation_q1_Millen.rds")
+saveRDS(sc4_2subset_variation_q1_Millen, file = "sc4_2subset_variation_q1_Millen.rds")
 

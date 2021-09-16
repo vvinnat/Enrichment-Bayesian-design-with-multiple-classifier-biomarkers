@@ -479,10 +479,10 @@ binary_bayesian_trial_HIGH_AGE <-
         jags(
           data = inits_IA1,
           model = bayesian.model,
-          n.iter = 300000,
-          n.burnin = 200000,
+          n.iter = 30000,
+          n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -552,10 +552,10 @@ binary_bayesian_trial_HIGH_AGE <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -614,10 +614,10 @@ binary_bayesian_trial_HIGH_AGE <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -678,10 +678,10 @@ binary_bayesian_trial_HIGH_AGE <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -753,10 +753,10 @@ binary_bayesian_trial_HIGH_AGE <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -816,10 +816,10 @@ binary_bayesian_trial_HIGH_AGE <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -878,10 +878,10 @@ binary_bayesian_trial_HIGH_AGE <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -956,10 +956,10 @@ binary_bayesian_trial_HIGH_AGE <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -1015,10 +1015,10 @@ binary_bayesian_trial_HIGH_AGE <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -1077,10 +1077,10 @@ binary_bayesian_trial_HIGH_AGE <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -1236,11 +1236,11 @@ binary_bayesian_trial_HIGH_SOFA_NEURO <-
       bayesian_jags_fonction_IA1 <-
         jags(
           data = inits_IA1,
-          model = binary_bayesian_model_2_subset_Millen,
-          n.iter = 300000,
-          n.burnin = 200000,
+          model = bayesian.model,
+          n.iter = 30000,
+          n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -1315,10 +1315,10 @@ binary_bayesian_trial_HIGH_SOFA_NEURO <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -1382,10 +1382,10 @@ binary_bayesian_trial_HIGH_SOFA_NEURO <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -1448,10 +1448,10 @@ binary_bayesian_trial_HIGH_SOFA_NEURO <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -1527,10 +1527,10 @@ binary_bayesian_trial_HIGH_SOFA_NEURO <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -1595,10 +1595,10 @@ binary_bayesian_trial_HIGH_SOFA_NEURO <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -1661,10 +1661,10 @@ binary_bayesian_trial_HIGH_SOFA_NEURO <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -1742,10 +1742,10 @@ binary_bayesian_trial_HIGH_SOFA_NEURO <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -1809,10 +1809,10 @@ binary_bayesian_trial_HIGH_SOFA_NEURO <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -1874,10 +1874,10 @@ binary_bayesian_trial_HIGH_SOFA_NEURO <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -2038,10 +2038,10 @@ binary_bayesian_trial_HIGH_pao2 <-
         jags(
           data = inits_IA1,
           model = bayesian.model,
-          n.iter = 300000,
-          n.burnin = 200000,
+          n.iter = 30000,
+          n.burnin = 20000,
           n.thin = 5,
-          n.chains = 5,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2120,10 +2120,10 @@ binary_bayesian_trial_HIGH_pao2 <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -2187,10 +2187,10 @@ binary_bayesian_trial_HIGH_pao2 <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -2253,10 +2253,10 @@ binary_bayesian_trial_HIGH_pao2 <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -2337,10 +2337,10 @@ binary_bayesian_trial_HIGH_pao2 <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -2405,10 +2405,10 @@ binary_bayesian_trial_HIGH_pao2 <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -2471,10 +2471,10 @@ binary_bayesian_trial_HIGH_pao2 <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -2555,10 +2555,10 @@ binary_bayesian_trial_HIGH_pao2 <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -2620,10 +2620,10 @@ binary_bayesian_trial_HIGH_pao2 <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -2685,10 +2685,10 @@ binary_bayesian_trial_HIGH_pao2 <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -2898,11 +2898,11 @@ binary_bayesian_trial_HIGH_AGE_GS <-
       bayesian_jags_fonction_IA1 <-
         jags(
           data = inits_IA1,
-          model = binary_bayesian_model_2_subset_Millen_2.0,
-          n.iter = 300000,
-          n.burnin = 200000,
+          model = bayesian.model,
+          n.iter = 30000,
+          n.burnin = 20000,
           n.thin = 5,
-          n.chains = 5,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -2972,10 +2972,10 @@ binary_bayesian_trial_HIGH_AGE_GS <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -3034,10 +3034,10 @@ binary_bayesian_trial_HIGH_AGE_GS <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -3098,10 +3098,10 @@ binary_bayesian_trial_HIGH_AGE_GS <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -3175,10 +3175,10 @@ binary_bayesian_trial_HIGH_AGE_GS <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -3240,10 +3240,10 @@ binary_bayesian_trial_HIGH_AGE_GS <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -3303,10 +3303,10 @@ binary_bayesian_trial_HIGH_AGE_GS <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -3382,10 +3382,10 @@ binary_bayesian_trial_HIGH_AGE_GS <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -3443,10 +3443,10 @@ binary_bayesian_trial_HIGH_AGE_GS <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -3506,10 +3506,10 @@ binary_bayesian_trial_HIGH_AGE_GS <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -3686,11 +3686,11 @@ binary_bayesian_trial_HIGH_sofa_neuro_GS <-
       bayesian_jags_fonction_IA1 <-
         jags(
           data = inits_IA1,
-          model = binary_bayesian_model_2_subset_Millen_2.0,
-          n.iter = 300000,
-          n.burnin = 200000,
+          model = bayesian.model,
+          n.iter = 30000,
+          n.burnin = 20000,
           n.thin = 5,
-          n.chains = 5,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -3760,10 +3760,10 @@ binary_bayesian_trial_HIGH_sofa_neuro_GS <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -3824,10 +3824,10 @@ binary_bayesian_trial_HIGH_sofa_neuro_GS <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -3887,10 +3887,10 @@ binary_bayesian_trial_HIGH_sofa_neuro_GS <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -3964,10 +3964,10 @@ binary_bayesian_trial_HIGH_sofa_neuro_GS <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -4028,10 +4028,10 @@ binary_bayesian_trial_HIGH_sofa_neuro_GS <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -4091,10 +4091,10 @@ binary_bayesian_trial_HIGH_sofa_neuro_GS <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -4168,10 +4168,10 @@ binary_bayesian_trial_HIGH_sofa_neuro_GS <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -4232,10 +4232,10 @@ binary_bayesian_trial_HIGH_sofa_neuro_GS <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -4295,10 +4295,10 @@ binary_bayesian_trial_HIGH_sofa_neuro_GS <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 5,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -4476,10 +4476,10 @@ binary_bayesian_trial_HIGH_sofa_resp_GS <-
         jags(
           data = inits_IA1,
           model = binary_bayesian_model_2_subset_Millen_2.0,
-          n.iter = 300000,
-          n.burnin = 200000,
+          n.iter = 30000,
+          n.burnin = 20000,
           n.thin = 5,
-          n.chains = 1,
+          n.chains = 3,
           parameters.to.save = c(
             "p1.estim",
             "p0.estim",
@@ -4553,10 +4553,10 @@ binary_bayesian_trial_HIGH_sofa_resp_GS <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -4616,10 +4616,10 @@ binary_bayesian_trial_HIGH_sofa_resp_GS <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -4677,10 +4677,10 @@ binary_bayesian_trial_HIGH_sofa_resp_GS <-
           jags(
             data = inits_IA2,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -4760,10 +4760,10 @@ binary_bayesian_trial_HIGH_sofa_resp_GS <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -4824,10 +4824,10 @@ binary_bayesian_trial_HIGH_sofa_resp_GS <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -4885,10 +4885,10 @@ binary_bayesian_trial_HIGH_sofa_resp_GS <-
           jags(
             data = inits_IA3,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -4967,10 +4967,10 @@ binary_bayesian_trial_HIGH_sofa_resp_GS <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -5029,10 +5029,10 @@ binary_bayesian_trial_HIGH_sofa_resp_GS <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -5088,10 +5088,10 @@ binary_bayesian_trial_HIGH_sofa_resp_GS <-
           jags(
             data = inits_IA4,
             model = bayesian.model,
-            n.iter = 300000,
-            n.burnin = 200000,
+            n.iter = 30000,
+            n.burnin = 20000,
             n.thin = 5,
-            n.chains = 1,
+            n.chains = 3,
             parameters.to.save = c(
               "p1.estim",
               "p0.estim",
@@ -5358,7 +5358,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
          n.iter = 30000,
          n.burnin = 20000,
          n.thin = 5,
-         n.chains = 1,
+         n.chains = 3,
          parameters.to.save = c(
            "p1.estim",
            "p0.estim",
@@ -5469,7 +5469,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -5563,7 +5563,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -5656,7 +5656,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -5748,7 +5748,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -5830,7 +5830,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -5911,7 +5911,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -5991,7 +5991,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -6104,7 +6104,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -6198,7 +6198,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -6291,7 +6291,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -6384,7 +6384,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -6466,7 +6466,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -6547,7 +6547,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -6627,7 +6627,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -6741,7 +6741,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -6835,7 +6835,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -6928,7 +6928,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -7021,7 +7021,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -7103,7 +7103,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -7184,7 +7184,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
@@ -7264,7 +7264,7 @@ resp_GS <- binary_bayesian_trial_HIGH_sofa_resp_GS(
            n.iter = 30000,
            n.burnin = 20000,
            n.thin = 5,
-           n.chains = 1,
+           n.chains = 3,
            parameters.to.save = c(
              "p1.estim",
              "p0.estim",
